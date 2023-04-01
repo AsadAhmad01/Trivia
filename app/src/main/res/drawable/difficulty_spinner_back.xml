@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item><shape>
+            <solid android:color="@color/colorGreenMateLight" />
+            <corners android:radius="4dp" />
+            <padding android:bottom="@dimen/_5ssp" android:left="@dimen/_5ssp" android:right="@dimen/_5ssp" android:top="@dimen/_5ssp" />
+        </shape></item>
+        <item android:drawable="@drawable/keydrop"
+            android:gravity="right|center">
+        </item>
+    </layer-list></item>
+
+</selector>

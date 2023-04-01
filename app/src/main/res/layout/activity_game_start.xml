@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context=".presentations.ui.activities.GameStartActivity">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/main_screen_background" />
+
+
+        <RelativeLayout
+            android:id="@+id/toolbarCustom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10ssp"
+            android:background="@drawable/cornor_radius"
+            android:gravity="center"
+            android:padding="@dimen/_8ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/Logout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back_white"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/ShareImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Game Mode"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bottomTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_15ssp"
+            android:text="@string/points_message"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGameMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/_35ssp"
+            android:layout_marginEnd="@dimen/_35ssp"
+            android:backgroundTint="@color/blue_light"
+            app:cardCornerRadius="@dimen/_8ssp"
+            app:cardElevation="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@id/bottomTxt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbarCustom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_10ssp"
+                android:orientation="vertical"
+                android:padding="@dimen/_10ssp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="game Mode"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_15ssp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_25ssp"
+                    android:background="@drawable/rounded_background_orange">
+
+                    <ImageView
+                        android:id="@+id/icnCategory"
+                        android:layout_width="@dimen/_30ssp"
+                        android:layout_height="@dimen/_30ssp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:padding="@dimen/_5ssp"
+                        android:src="@drawable/game_mode_category"
+                        app:tint="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/spinner_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/_5ssp"
+                        android:layout_toEndOf="@id/icnCategory"
+                        android:background="@drawable/category_spinner_back"
+                        android:gravity="center"
+                        android:padding="@dimen/_15ssp"
+                        android:spinnerMode="dropdown"
+                        android:text="Any Category"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:background="@drawable/rounded_background_orange"
+                    android:backgroundTint="@color/colorGreenMateLight">
+
+                    <ImageView
+                        android:id="@+id/icnDifficult"
+                        android:layout_width="@dimen/_30ssp"
+                        android:layout_height="@dimen/_30ssp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:padding="@dimen/_5ssp"
+                        android:src="@drawable/game_mode_difficulty_level"
+                        app:tint="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/spinner_difficulty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/_5ssp"
+                        android:layout_toEndOf="@id/icnDifficult"
+                        android:background="@drawable/difficulty_spinner_back"
+                        android:padding="@dimen/_15ssp"
+                        android:spinnerMode="dropdown"
+                        android:text="Any Category"
+                        android:textColor="@color/white"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:background="@drawable/rounded_background_orange"
+                    android:backgroundTint="@color/green">
+
+                    <ImageView
+                        android:id="@+id/icnType"
+                        android:layout_width="@dimen/_30ssp"
+                        android:layout_height="@dimen/_30ssp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="2dp"
+                        android:padding="@dimen/_5ssp"
+                        android:src="@drawable/game_mode_type_question"
+                        app:tint="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/spinner_Type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginEnd="@dimen/_5ssp"
+                        android:layout_toEndOf="@id/icnType"
+                        android:background="@drawable/type_spinner_back"
+                        android:padding="@dimen/_15ssp"
+                        android:spinnerMode="dropdown"
+                        android:text="Any Category"
+                        android:textColor="@color/white" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnPlayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardViewGameMode"
+            android:layout_marginStart="@dimen/_45ssp"
+            android:layout_marginTop="@dimen/_30ssp"
+            android:layout_marginEnd="@dimen/_45ssp"
+            android:background="@drawable/rounded_background_orange"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Play Now"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardViewGameMode" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/loadingLottieAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_black_hex_66"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/loading_animation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

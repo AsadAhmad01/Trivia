@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10ssp"
+        android:background="@drawable/rounded_background_orange"
+        android:backgroundTint="@color/white"
+        android:padding="@dimen/_10ssp">
+
+        <TextView
+            android:id="@+id/txtDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alfa_slab_one"
+            android:padding="@dimen/_5ssp"
+            android:text="Trivizia"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/txtDialogMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogTitle"
+            android:padding="@dimen/_5ssp"
+            android:text="Message"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/txtDialogMessage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogMessage"
+            android:padding="@dimen/_5ssp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/btnYesCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogMessage2"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_12ssp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10ssp"
+            android:text="Yes"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/btnNoCustom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDialogMessage2"
+            android:layout_marginTop="@dimen/_12ssp"
+            android:layout_marginEnd="@dimen/_10ssp"
+            android:layout_toLeftOf="@id/btnYesCustom"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/_10ssp"
+            android:text="no"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</layout>

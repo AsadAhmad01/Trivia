@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5ssp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background_orange"
+            android:backgroundTint="@color/transparent_black_hex_66"
+            android:orientation="vertical"
+            android:padding="@dimen/_8ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtQuestionAttempt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCorrectAnsAttempt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtQuestionAttempt"
+                android:layout_marginTop="@dimen/_8ssp"
+                android:text="Correct Answer"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtcorrectAnsAttemptTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtCorrectAnsAttempt"
+                android:text="Answer?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:id="@+id/txtAttemptedAnsAttempt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtcorrectAnsAttemptTxt"
+                android:layout_marginTop="@dimen/_3ssp"
+                android:text="Attempted Answer"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtAttemptedAnsAttemptTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAttemptedAnsAttempt"
+                android:text="Answer?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_10ssp" />
+
+            <ImageView
+                android:id="@+id/imgAttemptedAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAttemptedAnsAttemptTxt"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/round_back"
+                android:gravity="end"
+                android:src="@drawable/ic_baseline_check_false" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

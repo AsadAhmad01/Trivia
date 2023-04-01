@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5ssp"
+        android:background="@drawable/cornor_radius"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_10ssp"
+        android:paddingTop="@dimen/_5ssp"
+        android:paddingEnd="@dimen/_10ssp"
+        android:paddingBottom="@dimen/_5ssp">
+
+        <TextView
+            android:id="@+id/txtCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:text="Category Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/txtCategoryPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtCategoryName"
+            android:layout_marginTop="@dimen/_10ssp"
+            android:padding="@dimen/_5ssp"
+            android:text="0 Points"
+            android:textAlignment="textEnd"
+            android:textColor="@color/yellow"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+</layout>
