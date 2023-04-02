@@ -54,12 +54,20 @@ Thanks in advance
 ### App Videos ###
 
 * Multi Users 
+
+
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/109947592/229338498-51f10fbf-c4ca-433a-9221-b39a3ebfcc98.gif)
 
 * App Overview and Quick mode
+
+
+
 ![ezgif com-video-to-gif(1)](https://user-images.githubusercontent.com/109947592/229338532-36bbb3d5-efb4-4b87-939a-4b39e2b3fcb6.gif)
 
 * Normal Mode Play
+
+
+
 ![ezgif com-video-to-gif(2)](https://user-images.githubusercontent.com/109947592/229338566-c361f0a2-1b41-4cbb-acad-a684cca2c86c.gif)
 
 
