@@ -49,10 +49,21 @@ Lottie Animations Handling
 Thanks in advance
 
 ### Improvements ###
-* I wanted to make and Import and Export of Current User Data so that User can share his Data as a DB file to their or other device, and Import over ther and Boom will have his Data transfered. 
+* I wanted to make and Import and Export of Current User Data so that User can share his Data as a DB file to their or other device, and Import over ther and Boom will have his Data transfered.
+
+### App Videos ###
+
+* Multi Users 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/109947592/229338498-51f10fbf-c4ca-433a-9221-b39a3ebfcc98.gif)
+
+* App Overview and Quick mode
+![ezgif com-video-to-gif(1)](https://user-images.githubusercontent.com/109947592/229338532-36bbb3d5-efb4-4b87-939a-4b39e2b3fcb6.gif)
+
+* Normal Mode Play
+![ezgif com-video-to-gif(2)](https://user-images.githubusercontent.com/109947592/229338566-c361f0a2-1b41-4cbb-acad-a684cca2c86c.gif)
+
 
 ### Whome do I talk to? ###
-
 Further Details Contact US: haalim376@gmail.com
 * Repo owner or admin : Asad Ahmad
 * Other community or team contact: None
