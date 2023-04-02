@@ -5,7 +5,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-This Respository is for our Trivizia app, it is public so that our team lead can access it evaluate our task
+Its an Task assigned to me for an interview. 
 
 
 ### How do I get set up? ###
